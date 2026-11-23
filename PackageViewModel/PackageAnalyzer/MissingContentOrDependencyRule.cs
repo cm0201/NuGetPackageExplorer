@@ -19,9 +19,9 @@ namespace PackageExplorerViewModel.Rules
             {
                 yield return new PackageIssue(
                     PackageIssueLevel.Error,
-                    "Package has no content or dependency.",
-                    "The package does not contain any files or dependencies or framework assembly references to be a valid package.",
-                    "Add files or package dependencies or framework assembly references."
+                    "包不包含任何内容或依赖项。",
+                    "该包不包含任何文件、依赖项或框架程序集引用，因此不是有效的包。",
+                    "请添加文件、包依赖项或框架程序集引用。"
                     );
             }
         }

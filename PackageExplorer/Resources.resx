@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML file
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
     <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -87,7 +87,7 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
               <xsd:attribute ref="xml:space" />
@@ -118,284 +118,284 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Dialog_CreatedByLabel" xml:space="preserve">
-    <value>Authors:</value>
+    <value>作者：</value>
   </data>
   <data name="Dialog_DependenciesLabel" xml:space="preserve">
-    <value>Dependencies:</value>
+    <value>依赖项：</value>
   </data>
   <data name="Dialog_DeterministicValidation" xml:space="preserve">
-    <value>Deterministic (dll/exe):</value>
+    <value>确定性（dll/exe）：</value>
   </data>
   <data name="Dialog_DevelopmentDependencyLabel" xml:space="preserve">
-    <value>Development Dependency:</value>
+    <value>开发依赖：</value>
   </data>
   <data name="Dialog_DownloadingPackage" xml:space="preserve">
-    <value>Downloading package {0} {1}</value>
+    <value>正在下载包 {0} {1}</value>
   </data>
   <data name="Dialog_Errors" xml:space="preserve">
-    <value>Errors</value>
+    <value>错误</value>
   </data>
   <data name="Dialog_FrameworkAssembliesLabel" xml:space="preserve">
-    <value>Framework Assembly References:</value>
+    <value>框架程序集引用：</value>
   </data>
   <data name="Dialog_HasCompilerFlags" xml:space="preserve">
-    <value>Compiler Flags:</value>
+    <value>编译器标志：</value>
   </data>
   <data name="Dialog_Health" xml:space="preserve">
-    <value>Health:</value>
+    <value>健康度：</value>
   </data>
   <data name="Dialog_IdLabel" xml:space="preserve">
-    <value>Id:</value>
+    <value>ID：</value>
   </data>
   <data name="Dialog_Information" xml:space="preserve">
-    <value>Information</value>
+    <value>信息</value>
   </data>
   <data name="Dialog_InvalidPackageUrl" xml:space="preserve">
-    <value>The package URL {0} is invalid and can not be opened.</value>
+    <value>包 URL {0} 无效，无法打开。</value>
   </data>
   <data name="Dialog_LanguageLabel" xml:space="preserve">
-    <value>Language:</value>
+    <value>语言：</value>
   </data>
   <data name="Dialog_LicenceMeta" xml:space="preserve">
-    <value>License Meta:</value>
+    <value>许可证元数据：</value>
   </data>
   <data name="Dialog_LicenseExpression" xml:space="preserve">
-    <value>Expression:</value>
+    <value>表达式：</value>
   </data>
   <data name="Dialog_LicenseExpressionType" xml:space="preserve">
-    <value>Expression Type:</value>
+    <value>表达式类型：</value>
   </data>
   <data name="Dialog_LicenseExpressionVersion" xml:space="preserve">
-    <value>Expression Version:</value>
+    <value>表达式版本：</value>
   </data>
   <data name="Dialog_MinVersionLabel" xml:space="preserve">
-    <value>Min client version:</value>
+    <value>最低客户端版本：</value>
   </data>
   <data name="Dialog_MoreInfo" xml:space="preserve">
-    <value>Package Information</value>
+    <value>包信息</value>
   </data>
   <data name="Dialog_NoDependencyLabel" xml:space="preserve">
-    <value>No Dependencies</value>
+    <value>无依赖项</value>
   </data>
   <data name="Dialog_OpenFileFilter" xml:space="preserve">
-    <value>All supported files|*.nupkg;*.snupkg;*.nuspec|NuGet package file (*.nupkg)|*.nupkg|NuGet Symbols package file (*.snupkg)|*.snupkg|NuSpec file (*.nuspec)|*.nuspec</value>
+    <value>所有支持的文件|*.nupkg;*.snupkg;*.nuspec|NuGet 包文件 (*.nupkg)|*.nupkg|NuGet 符号包文件 (*.snupkg)|*.snupkg|NuSpec 文件 (*.nuspec)|*.nuspec</value>
   </data>
   <data name="Dialog_OwnersLabel" xml:space="preserve">
-    <value>Owners:</value>
+    <value>所有者：</value>
   </data>
   <data name="Dialog_PublisherLabel" xml:space="preserve">
-    <value>Publisher:</value>
+    <value>发布者：</value>
   </data>
   <data name="Dialog_ReadmeLabel" xml:space="preserve">
-    <value>Readme:</value>
+    <value>自述文件：</value>
   </data>
   <data name="Dialog_ReportAbuse" xml:space="preserve">
-    <value>Report Abuse</value>
+    <value>报告滥用</value>
   </data>
   <data name="Dialog_RepositoryBranch" xml:space="preserve">
-    <value>Branch:</value>
+    <value>分支：</value>
   </data>
   <data name="Dialog_RepositoryCommit" xml:space="preserve">
-    <value>Commit:</value>
+    <value>提交：</value>
   </data>
   <data name="Dialog_RepositoryLabel" xml:space="preserve">
-    <value>Repository:</value>
+    <value>存储库：</value>
   </data>
   <data name="Dialog_RepositoryType" xml:space="preserve">
-    <value>Type:</value>
+    <value>类型：</value>
   </data>
   <data name="Dialog_RepositoryUrl" xml:space="preserve">
-    <value>Url:</value>
+    <value>URL：</value>
   </data>
   <data name="Dialog_RequireLicenseLabel" xml:space="preserve">
-    <value>Requires License Acceptance:</value>
+    <value>需要接受许可证：</value>
   </data>
   <data name="Dialog_SaveQuestion" xml:space="preserve">
-    <value>Do you want to save your changes?</value>
+    <value>是否保存更改？</value>
   </data>
   <data name="Dialog_ServiceableLabel" xml:space="preserve">
-    <value>Serviceable:</value>
+    <value>可服务化：</value>
   </data>
   <data name="Dialog_SetActivePackagePublishSource" xml:space="preserve">
-    <value>The external url wants to add a publish source to NuGet Package Explorer.
+    <value>外部 URL 请求向 NuGet Package Explorer 添加发布源。
 
-Do you want to add '{0}' to the list of package publish sources?</value>
+是否要将 '{0}' 添加到包发布源列表中？</value>
   </data>
   <data name="Dialog_ShowDetails" xml:space="preserve">
-    <value>Show details...</value>
+    <value>显示详细信息...</value>
   </data>
   <data name="Dialog_SignatureValidation" xml:space="preserve">
-    <value>Signature:</value>
+    <value>签名：</value>
   </data>
   <data name="Dialog_SourceLinkValidation" xml:space="preserve">
-    <value>Source Link:</value>
+    <value>Source Link：</value>
   </data>
   <data name="Dialog_TagLabel" xml:space="preserve">
-    <value>Tags:</value>
+    <value>标签：</value>
   </data>
   <data name="Dialog_Title" xml:space="preserve">
     <value>NuGet Package Explorer</value>
   </data>
   <data name="Dialog_TitleLabel" xml:space="preserve">
-    <value>Title:</value>
+    <value>标题：</value>
   </data>
   <data name="Dialog_ValidationNote" xml:space="preserve">
-    <value>Note: Dependencies are not checked by this tool.</value>
+    <value>注意：本工具不检查依赖项。</value>
   </data>
   <data name="Dialog_ValidationResult" xml:space="preserve">
-    <value>Validation Results:</value>
+    <value>验证结果：</value>
   </data>
   <data name="Dialog_ValidationResultTitle" xml:space="preserve">
-    <value>Package Validation Results</value>
+    <value>包验证结果</value>
   </data>
   <data name="Dialog_VersionLabel" xml:space="preserve">
-    <value>Version:</value>
+    <value>版本：</value>
   </data>
   <data name="Dialog_ViewLicense" xml:space="preserve">
-    <value>View License Terms</value>
+    <value>查看许可条款</value>
   </data>
   <data name="Dialog_Warnings" xml:space="preserve">
-    <value>Warnings</value>
+    <value>警告</value>
   </data>
   <data name="MoveContentFileToFolder" xml:space="preserve">
-    <value>Do you want to add the file '{0}' to '{1}' folder instead?</value>
+    <value>是否改为将文件 '{0}' 放入 '{1}' 文件夹？</value>
   </data>
   <data name="MoveContentFileToFolderExplanation" xml:space="preserve">
-    <value>NuGet does not do anything special with files at the package root. The extension of this file indicates that it is intended to be placed in the '{0}' folder. </value>
+    <value>NuGet 对包根目录下的文件不做特殊处理。此文件的扩展名表明它应放置在 '{0}' 文件夹中。</value>
   </data>
   <data name="NoFxDependencyGroup" xml:space="preserve">
-    <value>(not framework specific)</value>
+    <value>（非特定框架）</value>
   </data>
   <data name="NoNetworkConnection" xml:space="preserve">
-    <value>Network connection is not detected.</value>
+    <value>未检测到网络连接。</value>
   </data>
   <data name="PackageChooser_ActionDownload" xml:space="preserve">
-    <value>download</value>
+    <value>下载</value>
   </data>
   <data name="PackageChooser_ActionHideAllVersions" xml:space="preserve">
-    <value>hide all versions</value>
+    <value>隐藏所有版本</value>
   </data>
   <data name="PackageChooser_ActionOpen" xml:space="preserve">
-    <value>open</value>
+    <value>打开</value>
   </data>
   <data name="PackageChooser_ActionShowAllVersions" xml:space="preserve">
-    <value>show all versions</value>
+    <value>显示所有版本</value>
   </data>
   <data name="PackageChooser_AlternatePackage" xml:space="preserve">
-    <value>Alternate Package:</value>
+    <value>备用包：</value>
   </data>
   <data name="PackageChooser_ClearSearchButtonTooltip" xml:space="preserve">
-    <value>Clear search</value>
+    <value>清除搜索</value>
   </data>
   <data name="PackageChooser_ColumnHeaderDownloads" xml:space="preserve">
-    <value>Downloads</value>
+    <value>下载次数</value>
   </data>
   <data name="PackageChooser_ColumnHeaderPublished" xml:space="preserve">
-    <value>Published</value>
+    <value>发布日期</value>
   </data>
   <data name="PackageChooser_ColumnHeaderVersion" xml:space="preserve">
-    <value>Version</value>
+    <value>版本</value>
   </data>
   <data name="PackageChooser_Deprecated" xml:space="preserve">
-    <value>Deprecated:</value>
+    <value>已弃用：</value>
   </data>
   <data name="PackageChooser_DetailAuthors" xml:space="preserve">
-    <value>Author(s):</value>
+    <value>作者：</value>
   </data>
   <data name="PackageChooser_DetailDatePublished" xml:space="preserve">
-    <value>Date published:</value>
+    <value>发布日期：</value>
   </data>
   <data name="PackageChooser_DetailDescription" xml:space="preserve">
-    <value>Description</value>
+    <value>描述</value>
   </data>
   <data name="PackageChooser_DetailLicense" xml:space="preserve">
-    <value>License:</value>
+    <value>许可证：</value>
   </data>
   <data name="PackageChooser_DetailProjectUrl" xml:space="preserve">
-    <value>Project URL:</value>
+    <value>项目 URL：</value>
   </data>
   <data name="PackageChooser_DetailReadme" xml:space="preserve">
-    <value>Readme:</value>
+    <value>自述文件：</value>
   </data>
   <data name="PackageChooser_DetailReportAbuse" xml:space="preserve">
-    <value>Report Abuse:</value>
+    <value>报告滥用：</value>
   </data>
   <data name="PackageChooser_DetailTags" xml:space="preserve">
-    <value>Tags:</value>
+    <value>标签：</value>
   </data>
   <data name="PackageChooser_DetailVersion" xml:space="preserve">
-    <value>Version:</value>
+    <value>版本：</value>
   </data>
   <data name="PackageChooser_PackageSource" xml:space="preserve">
-    <value>_Package source:</value>
+    <value>包源(_P)：</value>
   </data>
   <data name="PackageChooser_RefreshButtonTooltip" xml:space="preserve">
-    <value>Refresh</value>
+    <value>刷新</value>
   </data>
   <data name="PackageChooser_SearchBoxTooltip" xml:space="preserve">
-    <value>Search for package</value>
+    <value>搜索包</value>
   </data>
   <data name="PackageChooser_SearchBoxWatermark" xml:space="preserve">
-    <value>Search (Ctrl+E)</value>
+    <value>搜索 (Ctrl+E)</value>
   </data>
   <data name="PackageChooser_SearchButtonTooltip" xml:space="preserve">
-    <value>Search</value>
+    <value>搜索</value>
   </data>
   <data name="PackageChooser_ShowPreReleasePackages" xml:space="preserve">
-    <value>Show pre-release packages</value>
+    <value>显示预发布包</value>
   </data>
   <data name="PackageChooser_WindowTitle" xml:space="preserve">
-    <value>Select Package</value>
+    <value>选择包</value>
   </data>
   <data name="PackageContentsVerifyError" xml:space="preserve">
-    <value>Failed to download package correctly. The contents of the package could not be verified.</value>
+    <value>包下载失败，无法验证包的内容。</value>
   </data>
   <data name="PackageHasNoFile" xml:space="preserve">
-    <value>There are no contents or dependencies in the package.</value>
+    <value>包中没有内容或依赖项。</value>
   </data>
   <data name="ProxyConnectToMessage" xml:space="preserve">
-    <value>Connect to {0}</value>
+    <value>正在连接到 {0}</value>
   </data>
   <data name="Validation_Disallowed" xml:space="preserve">
-    <value>Disallowed</value>
+    <value>不允许</value>
   </data>
   <data name="Validation_HasUntrackedSources" xml:space="preserve">
-    <value>Contains untracked sources (obj)</value>
+    <value>包含未跟踪的源文件 (obj)</value>
   </data>
   <data name="Validation_InvalidSourceLink" xml:space="preserve">
-    <value>Invalid Source Link</value>
+    <value>Source Link 无效</value>
   </data>
   <data name="Validation_MissingCompilerFlags" xml:space="preserve">
-    <value>Missing</value>
+    <value>缺失</value>
   </data>
   <data name="Validation_MissingSourceLink" xml:space="preserve">
-    <value>Has Symbols, No Source Link</value>
+    <value>有符号，但无 Source Link</value>
   </data>
   <data name="Validation_MissingSymbols" xml:space="preserve">
-    <value>Missing Symbols</value>
+    <value>缺少符号</value>
   </data>
   <data name="Validation_NonDeterministic" xml:space="preserve">
-    <value>Non deterministic</value>
+    <value>非确定性</value>
   </data>
   <data name="Validation_NothingToValidate" xml:space="preserve">
-    <value>No files found to validate</value>
+    <value>未找到可验证的文件</value>
   </data>
   <data name="Validation_Pending" xml:space="preserve">
-    <value>Pending</value>
+    <value>等待中</value>
   </data>
   <data name="Validation_Present" xml:space="preserve">
-    <value>Present, not reproducible</value>
+    <value>存在，但不可复现</value>
   </data>
   <data name="Validation_Suspect" xml:space="preserve">
-    <value>Suspect</value>
+    <value>可疑</value>
   </data>
   <data name="Validation_Unknown" xml:space="preserve">
-    <value>Unknown</value>
+    <value>未知</value>
   </data>
   <data name="Validation_Valid" xml:space="preserve">
-    <value>Valid</value>
+    <value>有效</value>
   </data>
   <data name="Validation_ValidExternal" xml:space="preserve">
-    <value>Valid with Symbol Server</value>
+    <value>使用符号服务器时有效</value>
   </data>
 </root>

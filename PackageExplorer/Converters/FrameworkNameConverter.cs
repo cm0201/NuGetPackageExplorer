@@ -46,7 +46,7 @@ namespace PackageExplorer
                     if (parts[0].Equals("lib", StringComparison.OrdinalIgnoreCase) ||
                         parts[0].Equals("build", StringComparison.OrdinalIgnoreCase))
                     {
-                        return " (Invalid framework)";
+                        return "（无效的框架）";
                     }
                     else
                     {
@@ -60,7 +60,7 @@ namespace PackageExplorer
                 }
                 else if (!parts[0].Equals("content", StringComparison.OrdinalIgnoreCase))
                 {
-                    return " (Unrecognized framework)";
+                    return "（无法识别的框架）";
                 }
             }
 

@@ -53,10 +53,10 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Assembly not inside a framework folder",
-                "The assembly '" + target +
-                $"' is placed directly under the '{folder}' folder. It is recommended that assemblies be placed inside a framework-specific folder.",
-                "Move it into a framework-specific folder. If this assembly is targeted for multiple frameworks, ignore this warning."
+                "程序集不在框架文件夹内",
+                "程序集 '" + target +
+                $"' 直接位于 '{folder}' 文件夹下。建议将程序集放在特定框架的子文件夹内。",
+                "将其移动到特定框架的子文件夹内。如果该程序集面向多个框架，可忽略此警告。"
                 );
         }
 
@@ -64,10 +64,10 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Assembly outside known folders",
-                "The assembly '" + target +
-                $"' is inside the '{folder}' folder and hence it won't be used when the package is installed into a project.",
-                "Move it into a known folder."
+                "程序集位于已知文件夹之外",
+                "程序集 '" + target +
+                $"' 位于 '{folder}' 文件夹内，因此在包安装到项目时不会被使用。",
+                "将其移动到已知文件夹内。"
                 );
         }
     }

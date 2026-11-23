@@ -385,11 +385,11 @@ namespace NuGetPe
                 {
                     sourceLinkResult = SymbolValidationResult.HasUntrackedSources;
 
-                    var sb = new StringBuilder("Contains untracked sources:\n");
-                    sb.AppendLine("To Fix:");
+                    var sb = new StringBuilder("包含未跟踪的源文件：\n");
+                    sb.AppendLine("修复方法：");
                     sb.AppendLine("<EmbedUntrackedSources>true</EmbedUntrackedSources>");
                     sb.AppendLine("");
-                    sb.AppendLine("Also, use 3.1.300 SDK to build or\nworkaround in: https://github.com/dotnet/sourcelink/issues/572");
+                    sb.AppendLine("另外，请使用 3.1.300 SDK 构建，或参考：https://github.com/dotnet/sourcelink/issues/572");
 
                     foreach (var untracked in untrackedSources)
                     {
@@ -408,7 +408,7 @@ namespace NuGetPe
                 else if (filesWithPdb.Count == 0)
                 {
                     sourceLinkResult = SymbolValidationResult.NothingToValidate;
-                    sourceLinkErrorMessage = "No files found to validate";
+                    sourceLinkErrorMessage = "未找到可验证的文件";
                 }
                 else if (requireExternal)
                 {
@@ -429,7 +429,7 @@ namespace NuGetPe
                 {
                     sourceLinkResult = SymbolValidationResult.NoSourceLink;
 
-                    sb.AppendLine(CultureInfo.CurrentCulture, $"Missing Source Link for:\n{string.Join("\n", noSourceLink.Select(p => p.Path))}");
+                    sb.AppendLine(CultureInfo.CurrentCulture, $"缺少 Source Link 的文件：\n{string.Join("\n", noSourceLink.Select(p => p.Path))}");
                     found = true;
                 }
 
@@ -442,7 +442,7 @@ namespace NuGetPe
 
                     foreach (var (file, errors) in sourceLinkErrors)
                     {
-                        sb.AppendLine(CultureInfo.CurrentCulture, $"Source Link errors for {file.Path}:\n{string.Join("\n", errors)}");
+                        sb.AppendLine(CultureInfo.CurrentCulture, $"文件 {file.Path} 的 Source Link 错误：\n{string.Join("\n", errors)}");
                     }
 
                     found = true;
@@ -457,10 +457,10 @@ namespace NuGetPe
 
                     if (!pdbChecksumValid)
                     {
-                        sb.AppendLine("Some PDB's checksums do not match their PE files and are shown as missing.");
+                        sb.AppendLine("部分 PDB 的校验和与其 PE 文件不匹配，因此显示为缺失。");
                     }
 
-                    sb.AppendLine(CultureInfo.CurrentCulture, $"Missing Symbols for:\n{string.Join("\n", noSymbols.Select(p => p.Path))}");
+                    sb.AppendLine(CultureInfo.CurrentCulture, $"缺少符号的文件：\n{string.Join("\n", noSymbols.Select(p => p.Path))}");
                     found = true;
                 }
                 else if (!found)
@@ -482,21 +482,21 @@ namespace NuGetPe
             else if (sourceLinkResult == SymbolValidationResult.NoSymbols)
             {
                 deterministicResult = DeterministicResult.NonDeterministic;
-                deterministicErrorMessage = "Missing Symbols";
+                deterministicErrorMessage = "缺少符号";
 
                 compilerFlagsResult = HasCompilerFlagsResult.Missing;
-                compilerFlagsMessage = "Missing Symbols";
+                compilerFlagsMessage = "缺少符号";
             }
             else if (nonDeterministic.Count > 0)
             {
                 deterministicResult = DeterministicResult.NonDeterministic;
 
                 var sb = new StringBuilder();
-                sb.AppendLine("Ensure that the following property is enabled for CI builds\nand you're using at least the 2.1.300 SDK:");
+                sb.AppendLine("请确保为 CI 构建启用了以下属性，并且使用至少 2.1.300 的 SDK：");
                 sb.AppendLine();
                 sb.AppendLine("<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>");
                 sb.AppendLine();
-                sb.AppendLine("The following assemblies have not been compiled with deterministic settings:");
+                sb.AppendLine("以下程序集未使用确定性设置编译：");
 
                 foreach (var file in nonDeterministic)
                 {
@@ -525,15 +525,15 @@ namespace NuGetPe
                                        first.DebugData?.CompilerVersionSupportsReproducible == false) ? HasCompilerFlagsResult.Present : HasCompilerFlagsResult.Missing;
 
                 var sb = new StringBuilder();
-                sb.AppendLine("Ensure you're using at least the 5.0.300 SDK or MSBuild 16.10:");
+                sb.AppendLine("请确保使用至少 5.0.300 的 SDK 或 MSBuild 16.10：");
 
                 if (sourceLinkResult == SymbolValidationResult.NoSymbols)
                 {
-                    sb.AppendLine("Assemblies must have symbols:");
+                    sb.AppendLine("程序集必须带有符号：");
                 }
                 else
                 {
-                    sb.AppendLine("The following assemblies have not been compiled with a new enough compiler:");
+                    sb.AppendLine("以下程序集使用的编译器版本过旧：");
                 }
 
                 foreach (var file in nonReproducible)

@@ -138,12 +138,12 @@ namespace PackageExplorer
 
             if (!File.Exists(packagePath))
             {
-                UIServices.Show("File not found at " + packagePath, MessageLevel.Error);
+                UIServices.Show("未找到文件：" + packagePath, MessageLevel.Error);
                 return;
             }
 
             var oldContent = PackageSourceItem.Content;
-            PackageSourceItem.SetCurrentValue(ContentProperty, "Loading " + packagePath + "...");
+            PackageSourceItem.SetCurrentValue(ContentProperty, "正在加载 " + packagePath + "...");
 
             var succeeded = await Dispatcher.InvokeAsync(
                 () => OpenLocalPackageCore(packagePath), DispatcherPriority.Loaded);
@@ -343,7 +343,7 @@ namespace PackageExplorer
             }
 
             var result = UIServices.OpenFileDialog(
-                "Select File",
+                "选择文件",
                 StringResources.Dialog_OpenFileFilter,
                 out var selectedFile);
 
@@ -452,7 +452,7 @@ namespace PackageExplorer
             if (HasUnsavedChanges || (IsInEditFileMode && viewModel.FileEditorViewModel?.HasEdit == true))
             {
                 // if there is unsaved changes, ask user for confirmation
-                var result = UIServices.ConfirmWithCancel("You have unsaved changes in the current package.", StringResources.Dialog_SaveQuestion);
+                var result = UIServices.ConfirmWithCancel("当前包中有未保存的更改。", StringResources.Dialog_SaveQuestion);
 
                 if (result == null)
                 {
@@ -673,11 +673,11 @@ namespace PackageExplorer
             var result = MachineCache.Default.Clear();
             if (result)
             {
-                UIServices.Show("The NuGet download cache has been cleared successfully.", MessageLevel.Information);
+                UIServices.Show("NuGet 下载缓存已成功清除。", MessageLevel.Information);
             }
             else
             {
-                UIServices.Show("The NuGet download cache does not exist.", MessageLevel.Information);
+                UIServices.Show("NuGet 下载缓存不存在。", MessageLevel.Information);
             }
         }
 

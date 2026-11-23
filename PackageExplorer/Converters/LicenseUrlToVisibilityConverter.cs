@@ -30,6 +30,6 @@ namespace PackageExplorer
             return Visibility.Collapsed;
         }
 
-        public object? ConvertBack(object value, Type targetType, object parameter, _CultureInfo language) => throw new NotSupportedException("Only one-way conversion is supported.");
+        public object? ConvertBack(object value, Type targetType, object parameter, _CultureInfo language) => throw new NotSupportedException("仅支持单向转换。");
     }
 }

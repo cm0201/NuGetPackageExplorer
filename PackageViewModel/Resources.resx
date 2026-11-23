@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML file
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -87,7 +87,7 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
               <xsd:attribute ref="xml:space" />
@@ -118,120 +118,120 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Browse" xml:space="preserve">
-    <value>Browse</value>
+    <value>浏览</value>
   </data>
   <data name="Certificate" xml:space="preserve">
-    <value>Certificate</value>
+    <value>证书</value>
   </data>
   <data name="CertificateInfo" xml:space="preserve">
-    <value>Certificate Info</value>
+    <value>证书信息</value>
   </data>
   <data name="CertificateStore" xml:space="preserve">
-    <value>Certificate Store</value>
+    <value>证书存储</value>
   </data>
   <data name="ChooseCertificate_Description" xml:space="preserve">
-    <value>Provide the code signing certificate for signing the package.</value>
+    <value>请提供用于签署包的代码签名证书。</value>
   </data>
   <data name="ChooseCertificate_Title" xml:space="preserve">
-    <value>Choose a Certificate for Package Signing</value>
+    <value>选择用于包签名的证书</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>关闭</value>
   </data>
   <data name="ConfirmToDeleteContent" xml:space="preserve">
-    <value>Are you sure you want to delete '{0}'?</value>
+    <value>确定要删除 '{0}' 吗？</value>
   </data>
   <data name="ConfirmToDeleteContent_Title" xml:space="preserve">
-    <value>Deleted file or folder is not recoverable.</value>
+    <value>删除的文件或文件夹无法恢复。</value>
   </data>
   <data name="ConfirmToDeletePlugin" xml:space="preserve">
-    <value>Are you sure you want to delete this plugin?</value>
+    <value>确定要删除此插件吗？</value>
   </data>
   <data name="ConfirmToReplaceExsitingFile" xml:space="preserve">
-    <value>Do you want to replace the existing file '{0}'?</value>
+    <value>是否要替换已存在的文件 '{0}'？</value>
   </data>
   <data name="ConfirmToReplaceExsitingFile_Title" xml:space="preserve">
-    <value>There is already a file with the same name in this folder.</value>
+    <value>此文件夹中已存在同名文件。</value>
   </data>
   <data name="ConfirmToReplaceFile" xml:space="preserve">
-    <value>Do you want to replace existing file '{0}' on disk?</value>
+    <value>是否要替换磁盘上已存在的文件 '{0}'？</value>
   </data>
   <data name="ConfirmToReplaceFile_Title" xml:space="preserve">
-    <value>There is already a file with the same name in this location.</value>
+    <value>此位置已存在同名文件。</value>
   </data>
   <data name="ConnectingMessage" xml:space="preserve">
-    <value>Connecting to package source...</value>
+    <value>正在连接到包源...</value>
   </data>
   <data name="Dialog_SaveQuestion" xml:space="preserve">
-    <value>Do you want to save your changes?</value>
+    <value>是否保存更改？</value>
   </data>
   <data name="Dialog_Title" xml:space="preserve">
     <value>NuGet Package Explorer</value>
   </data>
   <data name="EditFormHasInvalidInput" xml:space="preserve">
-    <value>The operation cannot be completed because the edit form has some invalid input.</value>
+    <value>编辑表单中包含无效输入，无法完成该操作。</value>
   </data>
   <data name="ExportPackageSuccess" xml:space="preserve">
-    <value>This package has been exported successfully.</value>
+    <value>此包已成功导出。</value>
   </data>
   <data name="FileNameConflictWithExistingDirectory" xml:space="preserve">
-    <value>The new file has the same name as another folder.</value>
+    <value>新文件与某个文件夹同名。</value>
   </data>
   <data name="HashAlgorithName" xml:space="preserve">
-    <value>Hash Algorithm Name</value>
+    <value>哈希算法名称</value>
   </data>
   <data name="LoadingMessage" xml:space="preserve">
-    <value>Loading...</value>
+    <value>正在加载...</value>
   </data>
   <data name="NoNetworkConnection" xml:space="preserve">
-    <value>No network connection is detected.</value>
+    <value>未检测到网络连接。</value>
   </data>
   <data name="OpenExecutableScriptWarning" xml:space="preserve">
-    <value>Opening this file can potentially harm your computer. Do you want to continue?</value>
+    <value>打开此文件可能会损害你的计算机。是否继续？</value>
   </data>
   <data name="OpenExecutableScriptWarning_Title" xml:space="preserve">
-    <value>The file '{0}' is executable.</value>
+    <value>文件 '{0}' 是可执行文件。</value>
   </data>
   <data name="PackageCreationFailed" xml:space="preserve">
-    <value>Failed to generate package due to this error:</value>
+    <value>由于以下错误，生成包失败：</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>密码</value>
   </data>
   <data name="PasswordIncorrect" xml:space="preserve">
-    <value>Password incorrect</value>
+    <value>密码不正确</value>
   </data>
   <data name="PasswordRequired" xml:space="preserve">
-    <value>Password required</value>
+    <value>需要密码</value>
   </data>
   <data name="PhysicalFileMissing" xml:space="preserve">
-    <value>The file '{0}' was either renamed or deleted from its physical location. It will now be removed from the package.</value>
+    <value>文件 '{0}' 已被重命名或从其物理位置删除，现在将其从包中移除。</value>
   </data>
   <data name="PluginFailToReadContent" xml:space="preserve">
-    <value>*** The plugin that registers to read this file type fails to read the content of this file. ***</value>
+    <value>*** 注册用于读取此文件类型的插件无法读取此文件的内容。***</value>
   </data>
   <data name="RenameCausesNameCollison" xml:space="preserve">
-    <value>There is another file or folder with the same name as '{0}'.</value>
+    <value>存在另一个与 '{0}' 同名的文件或文件夹。</value>
   </data>
   <data name="SelectCertificate" xml:space="preserve">
-    <value>Select Certificate</value>
+    <value>选择证书</value>
   </data>
   <data name="Sign" xml:space="preserve">
-    <value>Sign</value>
+    <value>签名</value>
   </data>
   <data name="SigningPackage" xml:space="preserve">
-    <value>Signing package...</value>
+    <value>正在签署包...</value>
   </data>
   <data name="SigningPackageAndRemoveSignature" xml:space="preserve">
-    <value>Remove signature and signing package...</value>
+    <value>正在移除签名并签署包...</value>
   </data>
   <data name="SignPackage" xml:space="preserve">
-    <value>Sign Package</value>
+    <value>签署包</value>
   </data>
   <data name="TimestampServer" xml:space="preserve">
-    <value>Timestamp Server</value>
+    <value>时间戳服务器</value>
   </data>
   <data name="UnsupportedFormatMessage" xml:space="preserve">
-    <value>*** The format of this file is not supported. ***</value>
+    <value>*** 此文件的格式不受支持。***</value>
   </data>
 </root>

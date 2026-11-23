@@ -24,9 +24,9 @@
         <!-- Id & Version -->
         <TextBlock DockPanel.Dock="Top" Margin="10,10,10,0">
             <TextBlock.Inlines>
-                <Run Text="Id: " />
+                <Run Text="ID：" />
                 <Run FontWeight="Bold" Text="{Binding Id, Mode=OneTime}" />
-                <Run Text=" Version: " />
+                <Run Text="版本：" />
                 <Run FontWeight="Bold" Text="{Binding Version, Mode=OneTime}" />
             </TextBlock.Inlines>
         </TextBlock>

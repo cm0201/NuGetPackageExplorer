@@ -35,7 +35,7 @@ namespace PackageExplorer
 
         public string Name
         {
-            get { return "Plain Text"; }
+            get { return "纯文本"; }
         }
 
         public IEnumerable<HighlightingColor> NamedHighlightingColors

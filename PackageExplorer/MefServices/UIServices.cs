@@ -377,22 +377,22 @@ namespace PackageExplorer
 
             if (numberOfItemsLeft > 0)
             {
-                dialog.VerificationText = "Do this for the next " + numberOfItemsLeft + " file(s).";
+                dialog.VerificationText = "对接下来 " + numberOfItemsLeft + " 个文件执行此操作。";
             }
 
             var moveButton = new TaskDialogButton
             {
-                Text = "Yes",
+                Text = "是",
                 CommandLinkNote =
-                                     "'" + fileName + "' will be added to '" + targetFolder +
-                                     "' folder."
+                                     "'" + fileName + "' 将被添加到 '" + targetFolder +
+                                     "' 文件夹。"
             };
 
             var noMoveButton = new TaskDialogButton
             {
-                Text = "No",
+                Text = "否",
                 CommandLinkNote =
-                                       "'" + fileName + "' will be added to the package root."
+                                       "'" + fileName + "' 将被添加到包根目录。"
             };
 
             dialog.Buttons.Add(moveButton);
@@ -434,14 +434,14 @@ namespace PackageExplorer
 
             var yesButton = new TaskDialogButton
             {
-                Text = "Yes",
-                CommandLinkNote = "Return to package view and lose all your changes."
+                Text = "是",
+                CommandLinkNote = "返回包视图并放弃所有更改。"
             };
 
             var noButton = new TaskDialogButton
             {
-                Text = "No",
-                CommandLinkNote = "Stay at the metadata editor and fix the error."
+                Text = "否",
+                CommandLinkNote = "留在元数据编辑器中并修复错误。"
             };
 
             dialog.Buttons.Add(yesButton);
@@ -477,8 +477,8 @@ namespace PackageExplorer
             using var dialog = new CredentialDialog
             {
                 WindowTitle = Resources.Dialog_Title,
-                MainInstruction = "Credentials for " + target,
-                Content = "Enter Personal Access Tokens in the username field.",
+                MainInstruction = "凭据：" + target,
+                Content = "请在用户名字段中输入个人访问令牌 (PAT)。",
                 Target = target,
                 ShowSaveCheckBox = true, // Allow user to save the credentials to operating system's credential manager
                 ShowUIForSavedCredentials = false // Do not show dialog when credentials can be grabbed from OS credential manager

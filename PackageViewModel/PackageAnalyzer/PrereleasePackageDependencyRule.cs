@@ -45,12 +45,12 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Invalid prerelease dependency",
+                "无效的预发布依赖项",
                 string.Format(CultureInfo.CurrentCulture,
-                              "A stable release of a package must not have a dependency on a prerelease package, '{0}'.",
+                              "包的稳定版本不得依赖预发布包 '{0}'。",
                               target),
                 string.Format(CultureInfo.CurrentCulture,
-                              "Either modify the version spec of dependency '{0}' or update the version field.", target)
+                              "请修改依赖项 '{0}' 的版本规范，或更新版本字段。", target)
                 );
         }
     }

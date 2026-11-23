@@ -19,7 +19,7 @@ namespace PackageExplorer
             // don't display file bigger than 1MB
             if (stream.Length > 1024 * 1024)
             {
-                return "** This file is too big to view inline. ***";
+                return "** 此文件过大，无法内联查看。***";
             }
 
             var rtf = new RichTextBox

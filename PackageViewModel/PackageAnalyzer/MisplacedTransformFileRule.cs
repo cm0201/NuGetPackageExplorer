@@ -45,10 +45,10 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Transform file outside content folder",
-                "The transform file '" + path +
-                "' is outside the 'content' folder and hence will not be transformed during installation of this package.",
-                "Move it into the 'content' folder.");
+                "转换文件位于 content 文件夹之外",
+                "转换文件 '" + path +
+                "' 位于 'content' 文件夹之外，因此在安装此包时不会被转换。",
+                "将其移动到 'content' 文件夹内。");
         }
     }
 }

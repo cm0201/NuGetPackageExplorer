@@ -134,8 +134,8 @@ namespace PackageExplorerViewModel
                   expectedSymbolPackageName.Equals(packageName, StringComparison.OrdinalIgnoreCase)))
             {
                 var confirmed = ViewModel.UIServices.Confirm(
-                    "File name mismatch",
-                    "It looks like the package Id and version do not match this file name. Do you still want to save the package as '" + packageName + "'?",
+                    "文件名不匹配",
+                    "包的 Id 和版本与该文件名似乎不匹配。仍要将包另存为 '" + packageName + "' 吗？",
                     isWarning: true);
 
                 if (!confirmed)
@@ -155,7 +155,7 @@ namespace PackageExplorerViewModel
         {
             var packageName = ViewModel.PackageMetadata.FileName;
             var title = "Save " + packageName;
-            const string filter = "NuGet package file (*.nupkg)|*.nupkg|NuGet Symbols package file (*.snupkg)|*.snupkg|All files (*.*)|*.*";
+            const string filter = "NuGet 包文件 (*.nupkg)|*.nupkg|NuGet 符号包文件 (*.snupkg)|*.snupkg|所有文件 (*.*)|*.*";
             var initialDirectory = Path.IsPathRooted(ViewModel.PackageSource) ? ViewModel.PackageSource : null;
             if (ViewModel.UIServices.OpenSaveFileDialog(title, packageName, initialDirectory, filter, /* overwritePrompt */ false,
                                                         out var selectedPackagePath, out var filterIndex))
@@ -197,7 +197,7 @@ namespace PackageExplorerViewModel
         {
             var packageName = ViewModel.PackageMetadata.FileName + NuGetPe.Constants.ManifestExtension;
             var title = "Save " + packageName;
-            const string filter = "NuGet manifest file (*.nuspec)|*.nuspec|All files (*.*)|*.*";
+            const string filter = "NuGet 清单文件 (*.nuspec)|*.nuspec|所有文件 (*.*)|*.*";
             var initialDirectory = Path.IsPathRooted(ViewModel.PackageSource) ? ViewModel.PackageSource : null;
             if (ViewModel.UIServices.OpenSaveFileDialog(title, packageName, initialDirectory, filter, /* overwritePrompt */ false,
                                                         out var selectedPath, out var filterIndex))
@@ -229,7 +229,7 @@ namespace PackageExplorerViewModel
             {
                 var packageName = ViewModel.PackageMetadata.FileName;
                 var title = "Save " + packageName;
-                const string filter = "NuGet package file (*.nupkg)|*.nupkg|NuGet Symbols package file (*.snupkg)|*.snupkg|All files (*.*)|*.*";
+                const string filter = "NuGet 包文件 (*.nupkg)|*.nupkg|NuGet 符号包文件 (*.snupkg)|*.snupkg|所有文件 (*.*)|*.*";
                 var initialDirectory = Path.IsPathRooted(ViewModel.PackageSource) ? ViewModel.PackageSource : null;
                 if (ViewModel.UIServices.OpenSaveFileDialog(title, packageName, initialDirectory, filter, /* overwritePrompt */ false,
                                                             out var selectedPackagePath, out var filterIndex))

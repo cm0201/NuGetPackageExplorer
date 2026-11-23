@@ -81,7 +81,7 @@ namespace PackageExplorerViewModel
 
         public string? Description
         {
-            get { return "My package description."; }
+            get { return "我的包描述。"; }
         }
 
         public string? Summary

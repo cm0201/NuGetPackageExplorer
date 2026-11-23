@@ -80,12 +80,12 @@ namespace PackageExplorerViewModel
             {
                 if (string.IsNullOrEmpty(Id))
                 {
-                    return VersionSpec != null ? "Package id must not be empty." : null;
+                    return VersionSpec != null ? "包 ID 不能为空。" : null;
                 }
 
                 if (!PackageIdValidator.IsValidPackageId(Id))
                 {
-                    return "'" + Id + "' is an invalid package id.";
+                    return "'" + Id + "' 不是有效的包 ID。";
                 }
 
                 var activeDependencySet = _getActiveDependencySet();
@@ -93,7 +93,7 @@ namespace PackageExplorerViewModel
                 {
                     if (activeDependencySet.Dependencies.Any(p => p.Id.Equals(Id, StringComparison.OrdinalIgnoreCase)))
                     {
-                        return "This id already exists in the same dependency group.";
+                        return "同一依赖项组中已存在该 ID。";
                     }
                 }
             }

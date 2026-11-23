@@ -90,7 +90,7 @@ namespace PackageExplorerViewModel
                 if (_defaultPackageSourceUrl != null)
                 {
                     throw new InvalidOperationException(
-                        "Cannot set active package source when fixed package source is used.");
+                        "使用固定包源时无法设置活动的包源。");
                 }
                 CheckDisposed();
                 _packageSourceManager!.ActivePackageSource = value.Trim();

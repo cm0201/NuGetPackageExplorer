@@ -135,7 +135,7 @@ namespace PackageExplorerViewModel
             {
                 if (string.IsNullOrWhiteSpace(value) && !PackageTypes.Any(static pt => string.Equals(pt.Name, "SymbolsPackage", StringComparison.OrdinalIgnoreCase)))
                 {
-                    const string message = "Authors is required.";
+                    const string message = "作者为必填项。";
                     SetError("Authors", message);
                     throw new ArgumentException(message);
                 }
@@ -335,7 +335,7 @@ namespace PackageExplorerViewModel
             {
                 if (value == null)
                 {
-                    const string message = "Version is required.";
+                    const string message = "版本为必填项。";
                     SetError("Version", message);
                     throw new ArgumentException(message);
                 }
@@ -486,7 +486,7 @@ namespace PackageExplorerViewModel
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    const string message = "Description is required.";
+                    const string message = "描述为必填项。";
                     SetError("Description", message);
                     throw new ArgumentException(message);
                 }
@@ -701,7 +701,7 @@ namespace PackageExplorerViewModel
             {
                 if (RequireLicenseAcceptance && LicenseUrl == null && LicenseMetadata == null)
                 {
-                    return "Enabling license acceptance requires a license url, expression, or file.";
+                    return "启用许可证接受需要提供许可证 URL、表达式或文件。";
                 }
             }
 

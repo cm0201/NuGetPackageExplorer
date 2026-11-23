@@ -118,7 +118,7 @@ namespace PackageExplorer
                 Text = progressDialogText,
                 WindowTitle = Resources.Dialog_Title,
                 ShowTimeRemaining = true,
-                CancellationText = "Canceling download..."
+                CancellationText = "正在取消下载..."
             };
 
             // polling for Cancel button being clicked

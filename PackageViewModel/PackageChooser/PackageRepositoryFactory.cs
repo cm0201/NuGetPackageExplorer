@@ -33,7 +33,7 @@ namespace PackageExplorerViewModel
             }
             catch (UriFormatException)
             {
-                throw new ArgumentException("Invalid URL", nameof(source));
+                throw new ArgumentException("URL 无效", nameof(source));
             }
 
             return CreateRepository(new PackageSource(source));

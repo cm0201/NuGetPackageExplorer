@@ -139,7 +139,7 @@ namespace PackageExplorer
                 if (Directory.Exists(targetPath))
                 {
                     UIServices.Value.Show(
-                        "Adding plugin failed. There is already an existing plugin with the same Id and Version.",
+                        "添加插件失败。已存在 ID 和版本相同的插件。",
                         MessageLevel.Error);
                 }
                 else
@@ -159,7 +159,7 @@ namespace PackageExplorer
                         {
                             Directory.Delete(targetPath);
                             UIServices.Value.Show(
-                                "Adding plugin failed. The selected package does not have any assembly inside the 'lib\\net*' folder.",
+                                "添加插件失败。所选包的 lib\\net* 文件夹内没有任何程序集。",
                                 MessageLevel.Error);
                         }
                         else
@@ -404,7 +404,7 @@ namespace PackageExplorer
 
         private static string BuildErrorMessage(ReflectionTypeLoadException exception)
         {
-            var builder = new StringBuilder("One or more errors occurred while loading the selected plugin:");
+            var builder = new StringBuilder("加载所选插件时发生一个或多个错误：");
             builder.AppendLine();
             builder.AppendLine();
 

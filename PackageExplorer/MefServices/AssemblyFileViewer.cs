@@ -86,7 +86,7 @@ namespace PackageExplorer
                         {
                             new TabItem
                             {
-                                Header = "Assembly Attributes",
+                                Header = "程序集特性",
                                 Content = new ScrollViewer()
                                 {
                                     HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -96,7 +96,7 @@ namespace PackageExplorer
                             },
                             new TabItem
                             {
-                                Header = "PDB Info",
+                                Header = "PDB 信息",
                                 Content = new ScrollViewer
                                 {
                                     HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -109,7 +109,7 @@ namespace PackageExplorer
                             },
                             new TabItem
                             {
-                                Header = "PDB Sources",
+                                Header = "PDB 源",
                                 Content = new ScrollViewer
                                 {
                                     HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -146,7 +146,7 @@ namespace PackageExplorer
             )
             {
 #if HAS_UNO
-                this.Log().Error("Failed to generate view", e);
+                this.Log().Error("生成视图失败", e);
 #endif
             }
 
@@ -210,11 +210,11 @@ namespace PackageExplorer
         {
             if (assemblyMetaData.FullName != null)
             {
-                yield return KeyValuePair.Create("Full Name", assemblyMetaData.FullName);
+                yield return KeyValuePair.Create("完整名称", assemblyMetaData.FullName);
             }
             if (assemblyMetaData.StrongName != null)
             {
-                yield return KeyValuePair.Create("Strong Name", assemblyMetaData.StrongName);
+                yield return KeyValuePair.Create("强名称", assemblyMetaData.StrongName);
             }
 
             foreach (var entry in assemblyMetaData.MetadataEntries.OrderBy(static kv => kv.Key))
@@ -230,7 +230,7 @@ namespace PackageExplorer
                         .OrderBy(static assName => assName.Name)
                         .Select(static assName => assName.FullName));
 
-                yield return KeyValuePair.Create("Referenced assemblies", assemblyNamesDelimitedByLineBreak);
+                yield return KeyValuePair.Create("引用的程序集", assemblyNamesDelimitedByLineBreak);
             }
         }
 

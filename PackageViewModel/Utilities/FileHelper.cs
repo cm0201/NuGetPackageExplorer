@@ -156,7 +156,7 @@ namespace PackageExplorerViewModel
         {
             if (string.IsNullOrEmpty(fileName))
             {
-                throw new ArgumentException("Argument is null or empty", nameof(fileName));
+                throw new ArgumentException("参数不能为空", nameof(fileName));
             }
 
             var filePath = GetTempFileName(fileName);
@@ -168,7 +168,7 @@ namespace PackageExplorerViewModel
         {
             if (string.IsNullOrEmpty(fileName))
             {
-                throw new ArgumentException("Argument is null or empty", nameof(fileName));
+                throw new ArgumentException("参数不能为空", nameof(fileName));
             }
 
             ArgumentNullException.ThrowIfNull(content);

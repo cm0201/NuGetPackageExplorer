@@ -278,7 +278,7 @@ namespace PackageExplorerViewModel
         {
             if (!File.Exists(filePath))
             {
-                throw new ArgumentException("File does not exist.", nameof(filePath));
+                throw new ArgumentException("文件不存在。", nameof(filePath));
             }
 
             var newFileName = System.IO.Path.GetFileName(filePath)!;
@@ -368,7 +368,7 @@ namespace PackageExplorerViewModel
         internal void ReplaceFile(PackageFile oldFile)
         {
             string? selectedFileName = null;
-            var result = PackageViewModel?.UIServices.OpenFileDialog("Select New File", "All files (*.*)|*.*",
+            var result = PackageViewModel?.UIServices.OpenFileDialog("选择新文件", "所有文件 (*.*)|*.*",
                                                                      out selectedFileName) ?? false;
             if (result)
             {

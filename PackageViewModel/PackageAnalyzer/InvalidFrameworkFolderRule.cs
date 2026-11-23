@@ -44,9 +44,9 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Invalid framework folder",
-                "The folder '" + target + "' under 'lib' is not recognized as a valid framework name.",
-                "Rename it to a valid framework name."
+                "无效的框架文件夹",
+                "'lib' 下的文件夹 '" + target + "' 不是有效的框架名称。",
+                "将其重命名为有效的框架名称。"
                 );
         }
     }

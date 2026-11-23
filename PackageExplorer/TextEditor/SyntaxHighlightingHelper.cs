@@ -24,7 +24,7 @@ namespace PackageExplorer
                         _hasRegistered = true;
 
                         HighlightingManager.Instance.RegisterHighlighting(
-                            "Plain Text",
+                            "纯文本",
                             Extensions,
                             TextHighlightingDefinition.Instance);
                     }

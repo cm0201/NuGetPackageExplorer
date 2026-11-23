@@ -99,7 +99,7 @@ namespace PackageExplorerViewModel
                             }
                             catch (Exception e)
                             {
-                                _uiServices.Show("Cannot read API key:\n" + e.Message, MessageLevel.Error);
+                                _uiServices.Show("无法读取 API 密钥：\n" + e.Message, MessageLevel.Error);
                                 PublishKeyOrPAT = null;
                             }
                         }
@@ -207,7 +207,7 @@ namespace PackageExplorerViewModel
         {
             ShowProgress = false;
             HasError = false;
-            Status = (PublishAsUnlisted == true) ? "Package published and unlisted successfully." : "Package published successfully.";
+            Status = (PublishAsUnlisted == true) ? "包发布成功并已取消列出。" : "包发布成功。";
             if (PublishKeyOrPAT != null)
             {
                 _settingsManager.WriteApiKey(PublishUrl, PublishKeyOrPAT);
@@ -236,7 +236,7 @@ namespace PackageExplorerViewModel
             DiagnosticsClient.TrackEvent("PushPackage");
 
             ShowProgress = true;
-            Status = (PublishAsUnlisted == true) ? "Publishing and unlisting package..." : "Publishing package...";
+            Status = (PublishAsUnlisted == true) ? "正在发布并取消列出包..." : "正在发布包...";
             HasError = false;
             CanPublish = false;
 

@@ -60,7 +60,7 @@ namespace PackageExplorer
                         {
                             new TabItem
                             {
-                                Header = "PDB Info",
+                                Header = "PDB 信息",
                                 Content = new ScrollViewer
                                 {
                                     HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -73,7 +73,7 @@ namespace PackageExplorer
                             },
                             new TabItem
                             {
-                                Header = "PDB Sources",
+                                Header = "PDB 源",
                                 Content = new ScrollViewer
                                 {
                                     HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -111,14 +111,14 @@ namespace PackageExplorer
             )
             {
 #if HAS_UNO || USE_WINUI
-                this.Log().Error("Failed to generate view", e);
+                this.Log().Error("生成视图失败", e);
 #endif
             }
 
 #pragma warning restore CA2000 // Dispose objects before losing scope
             return new TextBlock()
             {
-                Text = "Full PDB files requires the EXE or DLL to be alongside."
+                Text = "完整 PDB 需要 EXE 或 DLL 文件位于同一目录。"
             };
         }
     }

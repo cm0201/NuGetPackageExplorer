@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:self="clr-namespace:PackageExplorer" 
         FontSize="{Binding FontSize, Source={StaticResource Settings}}" 
-        Title="Pick Target Frameworks"
+        Title="选择目标框架"
         WindowStartupLocation="CenterOwner" 
         SizeToContent="WidthAndHeight" 
         ShowInTaskbar="False"
@@ -22,12 +22,12 @@
     </self:StandardDialog.Resources>
     
     <DockPanel LastChildFill="True">
-        <Label DockPanel.Dock="Top" Content="_Target frameworks:" />
+        <Label DockPanel.Dock="Top" Content="目标框架(_T)：" />
 
         <Border DockPanel.Dock="Bottom" BorderThickness="0,0.5,0,0" BorderBrush="{DynamicResource ResourceKey={x:Static SystemColors.ActiveBorderBrushKey}}" Background="{DynamicResource ResourceKey={x:Static SystemColors.ControlBrushKey}}">
             <UniformGrid HorizontalAlignment="Right" Margin="10,5" Rows="1" Columns="2">
-                <Button x:Name="OKButton" IsDefault="True" Content="OK" Margin="5" IsEnabled="False" Click="OkButton_Click" />
-                <Button IsCancel="True" Content="Cancel" Margin="5,5,0,5" Padding="15,2" Click="CancelButton_Click" />
+                <Button x:Name="OKButton" IsDefault="True" Content="确定" Margin="5" IsEnabled="False" Click="OkButton_Click" />
+                <Button IsCancel="True" Content="取消" Margin="5,5,0,5" Padding="15,2" Click="CancelButton_Click" />
             </UniformGrid>
         </Border>
 

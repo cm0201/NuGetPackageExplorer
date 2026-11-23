@@ -52,20 +52,20 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "PowerScript file outside tools folder",
-                "The script file '" + path +
-                "' is outside the 'tools' folder and hence will not be executed during installation of this package.",
-                "Move it into the 'tools' folder.");
+                "脚本文件位于 tools 文件夹之外",
+                "脚本文件 '" + path +
+                "' 位于 'tools' 文件夹之外，因此在安装此包时不会执行。",
+                "将其移动到 'tools' 文件夹内。");
         }
 
         private static PackageIssue CreatePackageIssueForUnrecognizedScripts(string path)
         {
             return new PackageIssue(
                 PackageIssueLevel.Warning,
-                "Unrecognized PowerScript file",
-                "The script file '" + path +
-                "' is not recognized by NuGet and hence will not be executed during installation of this package.",
-                "Rename it to install.ps1, uninstall.ps1 or init.ps1 and place it directly under 'tools'.");
+                "无法识别的脚本文件",
+                "脚本文件 '" + path +
+                "' 未被 NuGet 识别，因此在安装此包时不会执行。",
+                "将其重命名为 install.ps1、uninstall.ps1 或 init.ps1，并直接放在 'tools' 下。");
         }
     }
 }

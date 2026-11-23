@@ -35,9 +35,9 @@ namespace PackageExplorerViewModel.Rules
         {
             return new PackageIssue(
                 PackageIssueLevel.Error,
-                "Assembly reference name not found.",
-                "The name '" + reference + "' in the Filtered Assembly References is not found under the 'lib' folder.",
-                "Either remove this assembly reference name or add a file with this name to the 'lib' folder.");
+                "未找到程序集引用名称。",
+                "已筛选的程序集引用中的名称 '" + reference + "' 在 'lib' 文件夹下不存在。",
+                "请移除该程序集引用名称，或在 'lib' 文件夹下添加同名文件。");
         }
     }
 }

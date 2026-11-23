@@ -26,7 +26,7 @@ namespace PackageExplorer
             }
             else
             {
-                return new ValidationResult(false, "Version is in incorrect format. Examples of valid versions include '1.0', '2.0.1-alpha', '1.2.3.4-RC'.");
+                return new ValidationResult(false, "版本格式不正确。有效版本示例：1.0、2.0.1-alpha、1.2.3.4-RC。");
             }
         }
     }

@@ -13,7 +13,7 @@ namespace NuGetPackageExplorer.Types
         {
             if (string.IsNullOrEmpty(id))
             {
-                throw new ArgumentException("Id cannot be null or empty.", nameof(id));
+                throw new ArgumentException("ID 不能为空。", nameof(id));
             }
 
             Id = id;
